@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    -moz-box-sizing: border-box;}
+body{
+    background-color: #eeeeee;
+    width: 80%;
+    max-width: 1024px;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header,nav,main,section,article,aside,footer{
+    margin: 10px 0;
+    padding: 0;
+    display: block;
+}
+
+/*------------MENU NAVEGACION + HR-------------*/
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    list-style-type: none;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: darkblue;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+}
+nav li:hover{
+    background-color: rgb(75, 75, 155);
+   
+}
+nav a:hover{
+     color: yellow;
+}
+
+hr{
+    border: 1px dotted rgb(97, 97, 216);
+    margin: 1px;
+    padding: 1px;
+}
+
+/*----------CABECERA DE LA PAGINA WEB----------*/
+header{
+    background-color: white;
+    border-radius: 10px;
+}
+.diseño{
+    display: block;
+    padding: 20px;
+}
+.diseño img{
+    width: 100%;
+}
+/*------------MAIN ------------------*/
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:darkblue;
+    font-size: xx-large;
+}
+/*-------------SECCION Y ARTICULOS--------------*/
+/*-----------ARTICULO PRIMERO-------------------*/
+.logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.logos div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+.logos img{
+    width: 100%;
+}
+
+.logos div a{
+    background-color: rgb(100, 100, 192);
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+.logos div a:hover{
+    background-color:rgb(163, 163, 216);
+    color: yellow;
+}
+/*------------ARTICULO SEGUNDO---------------*/
+.articulos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.texto{
+    background-color: white;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 10px;
+}
+.texto h2{
+    background-color: darkblue;
+    color: white;
+    display: block;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.texto p{
+    text-align: center;
+    line-height: 30px;
+}
+/*---------------TABLA NAVEGADORES-----------------------*/
+
+table, th, td{
+    border:1px inset rgb(241, 202, 202) ;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+ } 
+table{
+    background-color: white;
+margin: auto;
+padding: 20px;
+width: 800px;
+}
+
+tr a{
+    text-decoration: none;
+    color: rgb(41, 182, 230);
+    font-weight: lighter;
+}
+td img{
+   width: 32px; 
+   height: 32px;
+}
+thead tr td{
+    font-weight: bold;
+    color: rgb(41, 182, 230) ;
+}
+ thead tr td span{
+     text-transform: uppercase;
+ }
+
+ /*-------------FOOTER----------------------*/
+ footer{
+     background-color: white;
+     border-radius: 10px;
+ }
+ footer p{
+     text-align: center;
+     padding: 20px;
+ }
+ footer a{
+     text-decoration: none;
+ }
+ footer a:hover{
+     text-decoration:underline;
+ }
+
+ /*--------CONSULTAS DE MEDIOS--------------*/
+ @media screen and (max-width:1170px) {
+    .logos{ 
+        flex-direction: column;
+        margin: auto;
+        width: 70%; 
+    }
+    .logos div{
+        margin-bottom: 15px;
+    }
+    .articulos{
+        flex-direction: column;
+    }
+    table{
+        width: 70%;
+    }
+     
+ }
